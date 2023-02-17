@@ -9,18 +9,17 @@ int main(void)
 {
 	char upperAlp = 'A', lowerAlp = 'a';
 
-	while( lowerAlp <= 'z' )
+	while (lowerAlp <= 'z')
 	{
 		putchar(lowerAlp);
 		lowerAlp++;
 	}
 
-	while( upperAlp <= 'Z')
+	while (upperAlp <= 'Z')
 	{
 		putchar(upperAlp);
 		upperAlp++;
 	}
-	
 	putchar('\n');
 	return (0);
 }
