@@ -10,19 +10,22 @@ int main(void)
 {
 	int as, bs, cs;
 
-	for (cs = '0'; cs <= '9'; cs++)
+	for (cs = 0; cs <= 9; cs++)
 	{
-		for (bs = (cs + 1); bs <= '9'; bs++)
+		for (bs = 0; bs <= 9; bs++)
 		{
-			for (as = (cs + 1); as <= '9'; as++)
+			for (as = 0; as <= 9; as++)
 			{
-				putchar(cs);
-				putchar(bs);
-				putchar(as);
-				if (cs != '7' || bs != '8' || as != '9')
+				if (as > bs && bs > cs)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(cs);
+					putchar(bs);
+					putchar(as);
+					if (cs != 7 || bs != 8 || as != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
