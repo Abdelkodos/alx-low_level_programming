@@ -11,16 +11,17 @@ int main(void)
 	int num = '0';
 	char alph = 'a';
 
-	while(num <= '9'){
+	while (num <= '9')
+	{
 		putchar(num);
 		num++;
 	}
 
-	while(alph < 'g'){
+	while (alph < 'g')
+	{
 		putchar(alph);
 		alph++;
 	}
-
 	putchar('\n');
 	return (0);
 }
