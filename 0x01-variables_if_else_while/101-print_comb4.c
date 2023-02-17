@@ -16,6 +16,9 @@ int main(void)
 		{
 			for (as = (cs + '1'); as <= '9'; as++)
 			{
+				putchar(cs);
+				putchar(bs);
+				putchar(as);
 				if (cs != '7' || bs != '8' || as != '9')
 				{
 					putchar(',');
