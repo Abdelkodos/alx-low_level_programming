@@ -14,7 +14,7 @@ int main(void)
 		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
-		if (limit % 2 == 1)
+		if (counter == (limit / 2))
 			printf("%li", a);
 	}
 
