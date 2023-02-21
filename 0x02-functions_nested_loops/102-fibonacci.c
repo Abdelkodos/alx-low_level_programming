@@ -11,7 +11,7 @@ int main(void)
 
 	for (counter = 1; counter <= (limit / 2); counter++)
 	{
-		printf("%li %li ", a, b);
+		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
 	}
