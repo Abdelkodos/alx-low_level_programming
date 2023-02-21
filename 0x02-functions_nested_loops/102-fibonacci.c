@@ -14,9 +14,9 @@ int main(void)
 		printf("%li, %li, ", a, b);
 		a += b;
 		b += a;
+		if (limit % 2 == 1)
+			printf("%li", a);
 	}
-	if (limit % 2 == 1)
-		printf("%li", a);
 
 	printf("\n");
 	return (0);
