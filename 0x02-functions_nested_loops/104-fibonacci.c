@@ -22,6 +22,6 @@ int main(void)
 		if (counter < 98)
 			printf(", ");
 	}
-	printf("/n");
+	printf("\n");
 	return (0);
 }
