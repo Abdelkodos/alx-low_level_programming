@@ -16,7 +16,7 @@ int main(void)
 		counter++;
 		a = b;
 		b = c;
-		c = a + n;
+		c = a + b;
 		if (counter < 50)
 			printf(", ");
 	}
