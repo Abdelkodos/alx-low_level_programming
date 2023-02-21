@@ -6,18 +6,20 @@
  */
 int main(void)
 {
-	int counter, limit = 50;
-	long a = 1, b = 2;
+	int counter = 2;
+	long int a = 1, b = a + 1, c = a + b;
 
-	for (counter = 1; counter <= (limit / 2); counter++)
+	printf("%ld, %ld, ", a, b);
+	while (counter < 50)
 	{
-		printf("%li, %li, ", a, b);
-		a += b;
-		b += a;
-		if (counter == (limit / 2))
-			printf("%li", a);
+		printf("%ld", c);
+		counter++;
+		a = b;
+		b = c;
+		c = a + n;
+		if (counter < 50)
+			printf(", ");
 	}
-
 	printf("\n");
 	return (0);
 }
