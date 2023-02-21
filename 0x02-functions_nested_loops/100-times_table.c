@@ -18,15 +18,24 @@ void print_times_table(int n)
 
 				if (j == 0)
 					_putchar('0');
-				else if (p <= n)
+				else if (p <= 9)
 				{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(p + '0');
+				} else if (p > 99)
+				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(p / 100 + '0');
+					_putchar((p / 10) % 10 + '0');
+					_putchar(p % 10 + '0');
 				} else
 				{
 					_putchar(',');
+					_putchar(' ');
 					_putchar(' ');
 					_putchar(p / 10 + '0');
 					_putchar(p % 10 + '0');
