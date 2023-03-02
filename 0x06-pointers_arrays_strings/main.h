@@ -8,6 +8,7 @@
  *       used in the 0x03-more_functions_nested_loops directory.
  */
 
+int _putchar(char c);
 char *_strcat(char *dest, char *src);
 
 #endif
