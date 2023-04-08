@@ -6,27 +6,25 @@
  * @b: string that contain the must convert number
  * Return: converted number or 0
  */
+
 unsigned int binary_to_uint(const char *b)
 {
 	int length = 0, i;
-	unsigned int result = 0;
+	unsigned int result = 0, init = 1;
 
 	if (b == '\0')
 		return (0);
 
 	while (b[length] != '\0')
 		length++;
-	length--;
 
-	for (i = 0; i < length; i++)
+	for (i = (length - 1); length >= 0; length--)
 	{
-		if ((b[i] != '0') && (b[i] != '1'))
-			return (result);
+		if (b[length] != '0' && b[length] != '1')
+			return (0);
 
-		if (b[i] == '1')
-			result += (1 * (1 << length));
-
-		length--;
+		result += (b[length] - '0') * init;
+		init *= 2;
 	}
 
 	return (result);
