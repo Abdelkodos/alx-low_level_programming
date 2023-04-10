@@ -4,7 +4,7 @@
  * flip_bits - returns number of bits to flip to get from n to m
  * @n: the first number
  * @m: number to flip n to
- * Return: difference number of bits 
+ * Return: difference number of bits
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
@@ -16,6 +16,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		diff += (flips & 1);
 		flips >>= 1;
 	}
-			
+
 	return (diff);
 }
