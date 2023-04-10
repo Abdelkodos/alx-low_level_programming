@@ -5,7 +5,7 @@
  * @n: integer to pass
  * @index: index to set the value at
  *
- * return: (1) or (-1)
+ * Return: 1 or negative 1 depends on if there is error
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
