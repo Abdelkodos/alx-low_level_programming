@@ -11,7 +11,7 @@ char *create_buff(char *file)
 
 	buff = malloc(sizeof(char) * 1024);
 
-	if (buff == '\0')
+	if (buff == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
 		exit(99);

@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 
-		re = read(from, buff, 1024);
+		re = read(src, buff, 1024);
 		resv = open(argv[2], O_WRONLY | O_APPEND);
 
 	}
