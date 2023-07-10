@@ -45,7 +45,8 @@ int main(int argc, char *argv[])
 	re = read(src, buff, 1024);
 	resv = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	while (re > 0) {
+	while (re > 0)
+	{
 		if (src == -1 || re == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
