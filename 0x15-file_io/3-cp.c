@@ -36,10 +36,10 @@ int main(int argc, char *argv[])
 
 	buff = malloc(sizeof(char) * 1024);
 	if (buff == NULL)
-        {
-                dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-                exit(99);
-        }
+	{	
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+		exit(99);
+	}
 
 	src = open(argv[1], O_RDONLY);
 	re = read(src, buff, 1024);
